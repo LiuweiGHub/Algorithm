@@ -11,10 +11,13 @@ func main() {
 
 }
 
-//ѡ�������㷨
+//选择排序
 func slectSort(arr []int) []int {
+	if len(arr) <= 1 {
+		return arr
+	}
 	for i := 0; i < len(arr)-1; i++ {
-		//�ؼ�
+		//关键是要假设最小数字的位置
 		minPos := i
 		for j := i + 1; j < len(arr); j++ {
 			if arr[j] < arr[minPos] {
@@ -25,4 +28,3 @@ func slectSort(arr []int) []int {
 	}
 	return arr
 }
-
