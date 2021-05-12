@@ -11,10 +11,10 @@ func main() {
 
 }
 
-//Ñ¡ÔñÅÅÐòËã·¨
+//Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨
 func slectSort(arr []int) []int {
 	for i := 0; i < len(arr)-1; i++ {
-		//¹Ø¼ü
+		//ï¿½Ø¼ï¿½
 		minPos := i
 		for j := i + 1; j < len(arr); j++ {
 			if arr[j] < arr[minPos] {
@@ -23,6 +23,10 @@ func slectSort(arr []int) []int {
 		}
 
 		//////////////////
+
+
+
+		////////////////////
 		arr[minPos], arr[i] = arr[i], arr[minPos]
 	}
 	return arr
