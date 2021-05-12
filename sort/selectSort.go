@@ -24,6 +24,8 @@ func slectSort(arr []int) []int {
 				minPos = j
 			}
 		}
+
+		//////////////////
 		arr[minPos], arr[i] = arr[i], arr[minPos]
 	}
 	return arr
